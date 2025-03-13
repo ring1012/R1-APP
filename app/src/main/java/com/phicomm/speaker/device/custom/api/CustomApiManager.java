@@ -26,7 +26,7 @@ import com.unisound.ant.device.sessionlayer.SessionRegister;
 import com.unisound.vui.common.media.UniMediaPlayer;
 import com.unisound.vui.engine.ANTEngine;
 import com.unisound.vui.handler.session.memo.utils.RingingUtils;
-import com.unisound.vui.transport.out.ChangeWakeupWordEvent;
+import com.unisound.vui.transport.uout.ChangeWakeupWordEvent;
 import com.unisound.vui.util.JsonTool;
 import com.unisound.vui.util.LogMgr;
 import com.unisound.vui.util.UserPerferenceUtil;

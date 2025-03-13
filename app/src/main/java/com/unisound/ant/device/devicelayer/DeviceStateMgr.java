@@ -22,7 +22,7 @@ import com.unisound.vui.common.location.bean.LocationInfo;
 import com.unisound.vui.common.media.IMediaPlayerStateListener;
 import com.unisound.vui.engine.ANTEngineOption;
 import com.unisound.vui.engine.ANTHandlerContext;
-import com.unisound.vui.transport.out.BindStatusEvent;
+import com.unisound.vui.transport.uout.BindStatusEvent;
 import com.unisound.vui.util.AppGlobalConstant;
 import com.unisound.vui.util.JsonTool;
 import com.unisound.vui.util.LogMgr;

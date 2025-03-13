@@ -1,6 +1,6 @@
 package com.unisound.vui.handler.session.music.outputevents;
 
-import com.unisound.vui.transport.out.OutputEvent;
+import com.unisound.vui.transport.uout.OutputEvent;
 
 public class MusicOutputEvents extends OutputEvent<Boolean> {
     public MusicOutputEvents(boolean isEntering) {

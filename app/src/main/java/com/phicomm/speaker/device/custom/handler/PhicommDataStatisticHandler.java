@@ -3,15 +3,15 @@ package com.phicomm.speaker.device.custom.handler;
 import android.content.Context;
 import android.os.MessageDispatchManager;
 import android.os.ParcelableUtil;
-import com.orhanobut.logger.Logger;
+
 import com.phicomm.speaker.device.R;
 import com.phicomm.speaker.device.custom.message.MessageSenderDelegate;
 import com.unisound.ant.device.bean.PhicommStatisticInfo;
 import com.unisound.vui.common.config.ANTConfigPreference;
 import com.unisound.vui.engine.ANTHandlerContext;
 import com.unisound.vui.handler.SimpleUserEventInboundHandler;
-import com.unisound.vui.transport.out.ChangeWakeupWordEvent;
-import com.unisound.vui.transport.out.SimulateWakeupEvent;
+import com.unisound.vui.transport.uout.ChangeWakeupWordEvent;
+import com.unisound.vui.transport.uout.SimulateWakeupEvent;
 import com.unisound.vui.util.JsonTool;
 import com.unisound.vui.util.LogMgr;
 import com.unisound.vui.util.ThreadUtils;

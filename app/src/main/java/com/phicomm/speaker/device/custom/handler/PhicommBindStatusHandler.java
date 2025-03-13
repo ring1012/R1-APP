@@ -9,7 +9,7 @@ import com.unisound.vui.engine.ANTEngine;
 import com.unisound.vui.engine.ANTEngineOption;
 import com.unisound.vui.engine.ANTHandlerContext;
 import com.unisound.vui.engine.ANTOutboundHandlerAdapter;
-import com.unisound.vui.transport.out.BindStatusEvent;
+import com.unisound.vui.transport.uout.BindStatusEvent;
 import com.unisound.vui.util.ExoConstants;
 import com.unisound.vui.util.LogMgr;
 import com.unisound.vui.util.ThreadUtils;

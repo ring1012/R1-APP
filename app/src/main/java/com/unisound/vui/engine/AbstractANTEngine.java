@@ -3,7 +3,7 @@ package com.unisound.vui.engine;
 import android.content.Context;
 import android.text.TextUtils;
 import com.unisound.vui.common.file.FileHelper;
-import com.unisound.vui.transport.out.VocabContent;
+import com.unisound.vui.transport.uout.VocabContent;
 import com.unisound.vui.util.*;
 import nluparser.scheme.SCode;
 

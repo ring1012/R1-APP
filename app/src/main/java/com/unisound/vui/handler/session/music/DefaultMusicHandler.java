@@ -25,8 +25,6 @@ import com.unisound.ant.device.sessionlayer.NluSessionLayer;
 import com.unisound.vui.common.config.ANTConfigPreference;
 import com.unisound.vui.engine.ANTHandlerContext;
 import com.unisound.vui.handler.SimpleUserEventInboundHandler;
-import com.unisound.vui.handler.session.music.MusicService;
-import com.unisound.vui.handler.session.music.PlayController;
 import com.unisound.vui.handler.session.music.listener.MusicListenerWapper;
 import com.unisound.vui.handler.session.music.network.Api;
 import com.unisound.vui.handler.session.music.network.MusicConstants;
@@ -36,7 +34,7 @@ import com.unisound.vui.handler.session.music.outputevents.RequestListOutputEven
 import com.unisound.vui.handler.session.music.playitem.PlayItem;
 import com.unisound.vui.handler.session.music.playitem.PlayItemAdapter;
 import com.unisound.vui.handler.session.music.syncloud.MusicStateMgr;
-import com.unisound.vui.transport.out.SimulateWakeupEvent;
+import com.unisound.vui.transport.uout.SimulateWakeupEvent;
 import com.unisound.vui.util.AppGlobalConstant;
 import com.unisound.vui.util.AttributeKey;
 import com.unisound.vui.util.ExoConstants;

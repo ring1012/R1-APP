@@ -3,7 +3,6 @@ package com.unisound.vui.engine;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
-import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -19,7 +18,7 @@ import com.unisound.vui.common.network.NetUtil;
 import com.unisound.vui.d;
 import com.unisound.vui.data.tts.TTSContent;
 import com.unisound.vui.e;
-import com.unisound.vui.transport.out.VocabContent;
+import com.unisound.vui.transport.uout.VocabContent;
 import com.unisound.vui.util.*;
 import com.unisound.vui.util.entity.ExoAsrTag;
 import com.unisound.vui.util.entity.VocabSlotTag;

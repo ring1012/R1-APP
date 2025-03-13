@@ -2,9 +2,8 @@ package com.unisound.vui.transport;
 
 import com.alibaba.fastjson.TypeReference;
 import com.unisound.client.SpeechConstants;
-import com.unisound.vui.transport.out.OptionContent;
-import com.unisound.vui.transport.out.SdkCreatorInfo;
-import com.unisound.vui.transport.out.VocabContent;
+import com.unisound.vui.transport.uout.SdkCreatorInfo;
+import com.unisound.vui.transport.uout.VocabContent;
 import java.lang.reflect.Type;
 import java.util.Collections;
 import java.util.HashMap;
