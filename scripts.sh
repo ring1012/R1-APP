@@ -1,5 +1,5 @@
 #!/bin/sh
-# curl -sSL https://raw.githubusercontent.com/ring1012/R1-APP/refs/heads/main/scripts.sh | bash
+# curl -sSL https://raw.githubusercontent.com/ring1012/R1-APP/refs/heads/main/scripts.sh | sh
 
 
 # 停止并删除现有容器
