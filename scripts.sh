@@ -1,17 +1,19 @@
 #!/bin/sh
-# curl -s https://raw.githubusercontent.com/ring1012/R1-APP/refs/heads/main/scripts.sh | bash
-# 停止并删除现有容器（如果存在）
+# curl -sSL https://raw.githubusercontent.com/ring1012/R1-APP/refs/heads/main/scripts.sh | bash
+
+
+# 停止并删除现有容器
 docker stop r1 >/dev/null 2>&1
 docker rm r1 >/dev/null 2>&1
 
-# 获取存储路径（默认 /root/r1-iot/）
-echo -n "请输入存储路径（默认 /root/r1-iot/）: "
-read user_path
+# 获取用户输入 - 路径
+echo -n "请输入存储路径（默认/root/r1-iot/）: "
+read user_path < /dev/tty
 data_path="${user_path:-/root/r1-iot/}"
 
-# 获取密码（默认 123456）
-echo -n "请输入密码（默认 123456）: "
-read user_pw
+# 获取用户输入 - 密码
+echo -n "请输入密码（默认123456）: "
+read user_pw < /dev/tty
 password="${user_pw:-123456}"
 
 # 显示用户选择
@@ -34,9 +36,10 @@ docker run \
   -v "$data_path:/root/.r1-iot" \
   registry.cn-hangzhou.aliyuncs.com/ring1012/r1:server
 
-# 检查是否运行成功
-if docker ps --filter "name=r1" --format "{{.Names}}" | grep -q "r1"; then
-  echo "✅ 容器已成功启动！"
+# 检查容器状态
+if docker ps --filter "name=r1" | grep -q "r1"; then
+  echo "✅ 容器启动成功"
 else
-  echo "❌ 容器启动失败，请检查日志！"
+  echo "❌ 容器启动失败，请检查日志"
+  docker logs r1
 fi
