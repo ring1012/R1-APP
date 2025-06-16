@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# curl -s https://raw.githubusercontent.com/ring1012/R1-APP/refs/heads/main/scripts.sh | bash
 # 停止并删除现有容器
 docker stop r1
 docker rm r1
