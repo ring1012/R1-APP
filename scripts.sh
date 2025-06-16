@@ -38,7 +38,7 @@ docker run \
 
 # 检查容器状态
 if docker ps --filter "name=r1" | grep -q "r1"; then
-  echo "✅ 容器启动成功"
+  echo "✅ 容器启动中，预计1分钟"
 else
   echo "❌ 容器启动失败，请检查日志"
   docker logs r1
