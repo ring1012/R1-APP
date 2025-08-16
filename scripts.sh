@@ -39,6 +39,9 @@ docker run \
 # 检查容器状态
 if docker ps --filter "name=r1" | grep -q "r1"; then
   echo "✅ 容器启动中，预计1分钟"
+  docker images \
+  | awk '$1=="registry.cn-hangzhou.aliyuncs.com/ring1012/r1" && $2=="<none>" {print $3}' \
+  | xargs -r docker rmi -f
 else
   echo "❌ 容器启动失败，请检查日志"
   docker logs r1
